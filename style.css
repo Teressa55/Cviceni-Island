@@ -273,16 +273,58 @@ header h1{
 	.devet{
 		flex-basis: 50%;
 		position: relative;
+		line-height: 0;
 	}
 	.fotky .copyright{
 		position: absolute;
-		left: 100px;
-		bottom: 10px;
+
+		left: 0px;
+		bottom: 0px;
 		font-size: 15px;
-		width: 50%;
+		width: 100%;
+		margin: 0;
+		height: 40%;
 		display: inline-block;
+		text-align: center;
+		line-height: 1.6;
+		background-color: rgba(0, 0, 0, 0.507);
+		visibility: hidden;
+		transition-duration: 3s;
+		transition-timing-function: linear;
+	}
+	.jedna:hover .copyright{
+		visibility: visible;
+		}
+	.jedna:hover img{
+		transform:scaleX(1.2)
+	}
+	.dva:hover .copyright{
+		visibility: visible;
+	}
+	.tri:hover .copyright{
+		visibility: visible;
+	}
+	.ctyri:hover .copyright{
+		visibility: visible;
+	}
+	.pet:hover .copyright{
+		visibility: visible;
+	}
+	.sest:hover .copyright{
+		visibility: visible;
+	}
+	.sedm:hover .copyright{
+		visibility: visible;
+	}
+	.osm:hover .copyright{
+		visibility: visible;
+	}
+	.devet:hover .copyright{
+		visibility: visible;
 	}
 }
+
+
 @media screen and (min-width:800px) {
 	.vse{
 		position: relative;
